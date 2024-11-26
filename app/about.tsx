@@ -17,6 +17,7 @@ export default function about() {
           <View style={styles.content}>
             <View style={styles.logoContainer}>
               <Ionicons name="airplane" size={100} color="black" />
+              <Text style={styles.logoTitle}>AirMobile</Text>
             </View>
           </View>
 
@@ -85,8 +86,11 @@ const styles = StyleSheet.create ({
   },
   git: {
     color: 'blue',
-    fontSize: 18,
-    
-  }
-  
+    fontSize: 18, 
+  },
+  logoTitle: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    fontStyle: 'italic'
+  },
 })

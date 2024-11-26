@@ -17,6 +17,7 @@ export default function list() {
         <View style={styles.content}>
         <View style={styles.logoContainer}>
             <Ionicons name="airplane" size={100} color="black" />
+            <Text style={styles.title}>AirMobile</Text>
           </View>
 
           <View style={styles.list}>
@@ -90,5 +91,10 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     height: '100%',
+  },
+  title: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    fontStyle: 'italic'
   },
 });

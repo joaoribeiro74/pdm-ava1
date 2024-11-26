@@ -29,10 +29,14 @@ export default function ActionSheet() {
             (buttonIndex) => {
                 switch (buttonIndex) {
                     case 0:
-                        router.push('/');
+                        if (isAboutPage) {
+                            router.dismissAll();
+                        } else {
+                            router.dismiss(); 
+                        }
                         break;
                     case 1:
-                        router.push('/about');
+                            router.push('/about'); 
                         break;
                     default:
                         break;
